@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/demo-admin/demo-admin.iml" filepath="$PROJECT_DIR$/demo-admin/demo-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo-application.iml" filepath="$PROJECT_DIR$/demo/demo-application.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ldap-server/demo-ldap-server.iml" filepath="$PROJECT_DIR$/ldap-server/demo-ldap-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-boot-admin-security.iml" filepath="$PROJECT_DIR$/.idea/spring-boot-admin-security.iml" />
+    </modules>
+  </component>
+</project>
