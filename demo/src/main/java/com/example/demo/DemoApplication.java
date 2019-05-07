@@ -5,6 +5,8 @@ import io.micrometer.core.aop.TimedAspect;
 import io.micrometer.core.instrument.Counter;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Timer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.actuate.audit.AuditEvent;
 import org.springframework.boot.actuate.audit.AuditEventRepository;
@@ -13,7 +15,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
-//import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
+import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
+import org.springframework.security.config.web.server.ServerHttpSecurity;
+import org.springframework.security.core.userdetails.MapReactiveUserDetailsService;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.server.SecurityWebFilterChain;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.reactive.config.EnableWebFlux;
@@ -26,8 +33,10 @@ import java.time.Duration;
 @EnableAspectJAutoProxy
 @EnableWebFlux
 @EnableScheduling
-//@EnableWebFluxSecurity
+@EnableWebFluxSecurity
 public class DemoApplication {
+
+	public static final Logger log = LoggerFactory.getLogger(DemoApplication.class);
 
 	private final Counter counter;
 	private final Timer timer;
@@ -64,6 +73,9 @@ public class DemoApplication {
 	@Timed(value = "timed.test", description = "timed.description", histogram = true, percentiles = {0.5, 0.95, 0.98}, extraTags = {"tag1", "tag2"})
 	@Scheduled(fixedDelay = 1000)
 	public void scheduledTask() {
+		log.info("task 1 info");
+		log.info("task 1 debug");
+
 		timer.record(() -> {
 //			System.out.println("Running...");
 			try {
@@ -78,11 +90,12 @@ public class DemoApplication {
 
 	@Scheduled(fixedDelay = 1000)
 	public void scheduledTask2() {
+		log.info("task 2 info");
+		log.info("task 2 debug");
+
 		// Usually used for user-related events
-//		System.out.println("Running 2...");
 		AuditEvent evt = new AuditEvent("principal", "type", "data");
 		auditEventRepository.add(evt);
-//		throw new RuntimeException("error");
 	}
 
 	@Bean
@@ -90,46 +103,30 @@ public class DemoApplication {
 		return new TimedAspect(registry);
 	}
 
-	// TODO
-//	@Bean
-//	public SecurityWebFilterChain securityWebFilterChain(
-//			ServerHttpSecurity http) {
-//		return http.authorizeExchange()
-//				.pathMatchers("/actuator/**").permitAll()
-//				.anyExchange().authenticated()
-//				.and().build();
-//	}
+	@Bean
+	public MapReactiveUserDetailsService userDetailsService() {
+		UserDetails user = User.withDefaultPasswordEncoder()
+				.username("user")
+				.password("user")
+				.roles("USER")
+				.build();
 
-//	@Configuration
-//	public static class ActuatorSecurityConfig extends WebSecurityConfigurerAdapter {
-//
-//    /*
-//        This spring security configuration does the following
-//
-//        1. Restrict access to the Shutdown endpoint to the ACTUATOR_ADMIN role.
-//        2. Allow access to all other actuator endpoints.
-//        3. Allow access to static resources.
-//        4. Allow access to the home page (/).
-//        5. All other requests need to be authenticated.
-//        5. Enable http basic authentication to make the configuration complete.
-//           You are free to use any other form of authentication.
-//     */
-//
-//		@Override
-//		protected void configure(HttpSecurity http) throws Exception {
-//			http
-//					.authorizeRequests()
-//					.requestMatchers(EndpointRequest.to(ShutdownEndpoint.class))
-//					.hasRole("ACTUATOR_ADMIN")
-//					.requestMatchers(EndpointRequest.toAnyEndpoint())
-//					.permitAll()
-//					.requestMatchers(PathRequest.toStaticResources().atCommonLocations())
-//					.permitAll()
-//					.antMatchers("/")
-//					.permitAll()
-//					.antMatchers("/**")
-//					.authenticated()
-//					.and()
-//					.httpBasic();
-//		}
+		UserDetails admin = User.withDefaultPasswordEncoder()
+				.username("admin")
+				.password("admin")
+				.roles("USER", "ADMIN")
+				.build();
+		return new MapReactiveUserDetailsService(user, admin);
+	}
+
+	@Bean
+	public SecurityWebFilterChain securityWebFilterChain(ServerHttpSecurity http) {
+		return http.authorizeExchange()
+				.pathMatchers("/**").authenticated()
+				.and()
+					.httpBasic()
+				.and()
+					.csrf().disable()
+				.build();
+	}
 }
