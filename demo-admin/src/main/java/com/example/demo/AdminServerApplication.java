@@ -23,9 +23,6 @@ public class AdminServerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AdminServerApplication.class, args);
-
-		// TODO enable security
-		// https://www.baeldung.com/spring-boot-admin
 	}
 
 	// For running multiple instances of admin-server in HA mode (do not loose application events if fail)

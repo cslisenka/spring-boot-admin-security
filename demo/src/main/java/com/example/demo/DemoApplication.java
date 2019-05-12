@@ -74,10 +74,9 @@ public class DemoApplication {
 	@Scheduled(fixedDelay = 1000)
 	public void scheduledTask() {
 		log.info("task 1 info");
-		log.info("task 1 debug");
+		log.debug("task 1 debug");
 
 		timer.record(() -> {
-//			System.out.println("Running...");
 			try {
 				Thread.sleep(500);
 			} catch (InterruptedException e) {
@@ -91,7 +90,7 @@ public class DemoApplication {
 	@Scheduled(fixedDelay = 1000)
 	public void scheduledTask2() {
 		log.info("task 2 info");
-		log.info("task 2 debug");
+		log.debug("task 2 debug");
 
 		// Usually used for user-related events
 		AuditEvent evt = new AuditEvent("principal", "type", "data");

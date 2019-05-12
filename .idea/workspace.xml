@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c9648520-7a3e-4b78-b5ea-bf00efb6497e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-admin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-admin/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo-admin/src/main/java/com/example/demo/AdminServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-admin/src/main/java/com/example/demo/AdminServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-admin/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo-admin/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -24,12 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
-              <caret line="124" column="32" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
-              <folding>
-                <element signature="e#3325#3326#0" expanded="true" />
-                <element signature="e#3364#3365#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="35">
+              <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -37,65 +30,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-admin/src/main/java/com/example/demo/AdminServerApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-331">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="299">
+              <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1071#1072#0" expanded="true" />
+                <element signature="e#1135#1136#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/server/authentication/DelegatingServerAuthenticationSuccessHandler.java">
+        <entry file="file://$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="34" column="78" selection-start-line="34" selection-start-column="78" selection-end-line="34" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.1.5.RELEASE/spring-security-web-5.1.5.RELEASE-sources.jar!/org/springframework/security/web/server/authentication/RedirectServerAuthenticationSuccessHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="90">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo-admin/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-admin/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
+            <state relative-caret-position="30">
+              <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -110,10 +69,10 @@
       <list>
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/demo-admin/pom.xml" />
-        <option value="$PROJECT_DIR$/demo-admin/src/main/java/com/example/demo/AdminServerApplication.java" />
-        <option value="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" />
-        <option value="$PROJECT_DIR$/demo/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/demo-admin/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" />
+        <option value="$PROJECT_DIR$/demo-admin/src/main/java/com/example/demo/AdminServerApplication.java" />
+        <option value="$PROJECT_DIR$/demo/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -129,11 +88,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="demo-application" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="demo-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="demo-application" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
@@ -206,6 +165,30 @@
             <path>
               <item name="spring-boot-admin-security" type="b2602c69:ProjectViewProjectNode" />
               <item name="spring-boot-admin-security" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-admin-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-admin-security" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-admin-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-admin-security" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="spring-boot-admin-security" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-boot-admin-security" type="462c0819:PsiDirectoryNode" />
               <item name="demo-admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -274,7 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DemoApplication">
+  <component name="RunManager" selected="Application.DemoApplication 8082">
     <configuration name="AdminServerApplication 2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.AdminServerApplication" />
       <module name="demo-admin" />
@@ -302,6 +285,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoApplication 8082" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
+      <module name="demo-application" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8082 -Dspring.boot.admin.client.instance.metadata.instanceId=8082" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoApplication 8083" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
+      <module name="demo-application" />
+      <option name="VM_PARAMETERS" value="-Dserver.port=8083 -Dspring.boot.admin.client.instance.metadata.instanceId=8083" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DemoApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplication" />
       <module name="demo-application" />
@@ -315,11 +326,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DemoApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo-application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.DemoApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.AdminServerApplication 2" />
       <item itemvalue="Application.AdminServerApplication" />
       <item itemvalue="Application.DemoApplication" />
+      <item itemvalue="Application.DemoApplication 8082" />
+      <item itemvalue="Application.DemoApplication 8083" />
+      <item itemvalue="JUnit.DemoApplicationTests" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DemoApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -331,17 +365,21 @@
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="DemoApplicationTests - 2019.05.12 at 12h 21m 39s.xml">
+      <configuration name="DemoApplicationTests" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27171314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28605577" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996016" weight="0.7593423" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996016" visible="true" weight="0.76980567" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -402,8 +440,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-admin/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+        <state relative-caret-position="525">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -414,38 +452,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-admin/src/main/java/com/example/demo/AdminServerApplication.java">
+    <entry file="file://$PROJECT_DIR$/demo-admin/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-331">
-          <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="124" column="32" selection-start-line="124" selection-start-column="32" selection-end-line="124" selection-end-column="32" />
+        <state relative-caret-position="35">
+          <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-admin/src/main/java/com/example/demo/AdminServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="68" column="40" selection-start-line="68" selection-start-column="40" selection-end-line="68" selection-end-column="40" />
           <folding>
-            <element signature="e#3325#3326#0" expanded="true" />
-            <element signature="e#3364#3365#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1071#1072#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-admin/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <caret line="24" column="43" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
         </state>
       </provider>
     </entry>
